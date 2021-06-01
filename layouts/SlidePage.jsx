@@ -13,10 +13,10 @@ import { MODES } from '../constants/modes'
 
 const GlobalStyle = createGlobalStyle`
   :root {
-    --bg: #050505;
+    --bg: #fff;
     --meta: #888;
-    --accent: rgb(0, 92, 221);
-    --text: #FAFAFA;
+    --accent: #312E81;
+    --text: #111827;
     --base: 1.5rem;
     --code: 1rem;
     --heading-font-family: "Poppins";
