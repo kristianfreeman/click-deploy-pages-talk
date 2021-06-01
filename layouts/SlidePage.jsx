@@ -35,7 +35,7 @@ const GlobalStyle = createGlobalStyle`
 
   body,
   html {
-    font-family: "Roboto", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
       sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-size: var(--base);
     -webkit-font-smoothing: antialiased;
@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
     justify-content: center;
     align-items: center;
 
-    width: 100vw;
+    width: 66vw;
     height: 100vh;
     padding: 1rem;
 
@@ -93,6 +93,20 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1;
     position:relative;
     top:0.1em;
+}
+
+#slide img {
+  max-height: 600px;
+  max-width: 100%;
+}
+
+#slide figcaption {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 80%;
 }
 
   a {
@@ -349,7 +363,7 @@ export default function SlidePage({ children }) {
         notes={slideNotes()}
         currentSlide={currentSlide}
       >
-        <div id="slide" style={{ width: '100%' }}>
+        <div id="slide" style={{ margin: '0 auto' }}>
           {renderSlide()}
         </div>
       </PresentationMode>

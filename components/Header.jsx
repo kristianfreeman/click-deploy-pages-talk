@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Header({ name, title, date, url }) {
+export default function Header({ name, title, date, url, slide_link }) {
   return (
     <header>
       <div>
@@ -13,7 +13,7 @@ export default function Header({ name, title, date, url }) {
           <a>{title}</a>
         </Link>
       </div>
-      <time>{date}</time>
+      <a href={slide_link} target="_blank">Slides 🔗</a>
     </header>
   )
 }

@@ -16,7 +16,7 @@ const SlideshowPage = ({ totalSlidePages, currentSlide, filename }) => {
         </title>
         <link rel="icon" href="/favicon.ico" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=OpenSans:ital,wght@0,400;0,700;1,400&display=swap"
           rel="stylesheet"
         />
       </Head>
@@ -25,6 +25,7 @@ const SlideshowPage = ({ totalSlidePages, currentSlide, filename }) => {
         title={siteConfig.title}
         date={siteConfig.date}
         url={siteConfig.author.url}
+        slide_link={siteConfig.link}
       />
       <MDXContent />
     </TotalPagesContext.Provider>

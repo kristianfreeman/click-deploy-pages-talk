@@ -1,56 +1,175 @@
 <SlidePage>
-    
+
 <Cover>
 
-# NextJS MDX Deck
-    
-Create presentations using Next & React & MDX.
+# Jamstack on the edge
+
+An introduction to Cloudflare Pages
 
 </Cover>
 
 ---
 
-1. Clone this project.
-1. Write some MDX.
-1. Export as [static app](https://nextjs.org/docs/advanced-features/static-html-export)
-1. ???
-1. Profit as a speaker 💰💰💰
+# Kristian (@signalnerve)
 
-<SpeakerNotes>
-    
-Private notes here. 
-
-You can write an extremely long note and it'll still display inside of the presenter mode.
-
-# Even Markdown!
-
-- Just
-- do
-- it
-
-</SpeakerNotes>
-
+## Developer advocate for Cloudflare
 
 ---
 
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
-> <cite>Don Norman</cite>
+# Workers
+
+![Workers](https://kmf.lol/2021/06/workers.png)
 
 ---
 
-# 🤫
+# Pages
+
+![Workers](https://kmf.lol/2021/06/pages.png)
 
 ---
 
-## Slides are written in MDX!
+# We all know the "table stakes" for Jamstack tools
 
-And code is highlighted using `react-syntax-highlighter`.
+---
 
-```js
-const variable = someFunction();
-```
+# "Table stakes"
+
+1. Integrate with Git-based tools (GitHub, BitBucket, etc.)
+2. Deploy automatically based on changes to the application
+3. Automatically managed infrastructure (CDN, build servers)
+
+---
+
+# Most (if not all) tools do these things...
+
+---
+
+# What matters now is everything _around_ that core experience
+
+---
+
+# Serverless functions
+
+Deploy easy-to-write, infinitely scalable code to support your site
+
+---
+
+- Cloudflare Workers
+- AWS Lambda
+- Netlify serverless functions
+- Gatsby Cloud functions
+
+---
+
+# Collaborative workflows
+
+Deploy previews, UIs for commenting and remixing in-progress work
+
+---
+
+![Cloudflare Pages Deploy Previews](https://kmf.lol/2021/06/chrome_kg14XUrXo2.png)
+
+<figcaption>GitHub comment from Cloudflare Pages with up-to-date Deploy Preview URL</figcaption>
+
+---
+
+![Netlify Collaborative UI](https://kmf.lol/2021/06/netlify-deploypreview-may-19-2021-9-am-pt.png)
+
+<figcaption>Netlify's new collaboration tools with Deploy Previews</figcaption>
+
+---
+
+# Access management & tools for teams
+
+Secure work and limit access to your team or organization without restricting workflows
+
+---
+
+![Access management in Cloudflare Pages](https://kmf.lol/2021/06/chrome_aoiqcXvdGT.png)
+
+<figcaption>Access management capabilities in Cloudflare Pages</figcaption>
+
+---
+
+# What's next?
+
+---
+
+# The next substantial change in our workflows is...
+
+---
+
+# _Where_ we deploy our applications
+
+---
+
+# Right now
+
+## Your apps are deployed to one of ~30 regions
+
+![AWS](https://kmf.lol/2021/06/aws2.png)
+
+---
+
+# The future
+
+## Region: "The World"
+
+![Cloudflare Edge](http://kmf.lol/2021/06/chrome_Fy99PIFFym-nobg.png)
+
+---
+
+# Cloudflare's edge servers are around the world
+
+## Deploy <10ms away from most users
+
+---
+
+# Once we're deploying "at the edge", we can do more
+
+---
+
+# Serverless functions won't just live alongside your applications
+
+---
+
+# Serverless functions can run _before_ your applications
+
+---
+
+# Using Workers, we can build powerful APIs and real-time applications that tie _directly_ into our Pages applications
+
+---
+
+# Workers KV: a distributed key-value store at the edge
+
+---
+
+# Workers Durable Objects: always-consistent, addressable objects at the edge
+
+---
+
+# HTMLRewriter: streaming HTML parser & rewriter
+
+---
+
+# We can continue to build more powerful use-cases
+
+- SvelteKit rendering at the edge
+- Low-latency utility functions for things like payments and authentication
+- ??? 🤯
+
+---
+
+# Try out Pages and Workers!
+
+- pages.dev
+- workers.dev
+
+---
+
+# Thanks!
+
+https://click-deploy.pages.dev
 
 </SlidePage>

@@ -1,10 +1,11 @@
 export const siteConfig = {
-  name: `@whoisryosuke`,
-  title: `NextJS MDX Deck`,
+  name: `@signalnerve`,
+  title: `Jamstack on the edge`,
   date: `April 22, 2020`,
   author: {
-    url: `https://twitter.com/whoisryosuke`,
+    url: `https://twitter.com/signalnerve`,
   },
+  link: 'https://click-deploy.pages.dev'
 }
 
 export default siteConfig
